@@ -166,11 +166,81 @@
 
         }
 
-        
+        function fabio() {
+            num1 = prompt("Diga o 1° numero")
+            num2 = prompt("Diga o 2° numero")
+            num3 = prompt("Diga o 3° numero")
+            num4 = prompt("Diga o 4° numero")
+            num5 = prompt("Diga o 5° numero")
+            lista = []
+
+            lista.push(num1);
+            lista.push(num2);
+            lista.push(num3);
+            lista.push(num4);
+            lista.push(num5);
+
+            document.write(lista)
+        }
+
+        function soma() {
+            num1 = prompt("Diga o 1° numero")
+            num2 = prompt("Diga o 2° numero")
+            num3 = prompt("Diga o 3° numero")
+            num4 = prompt("Diga o 4° numero")
+            num5 = prompt("Diga o 5° numero")
+            lista = []
+
+            lista.push(num1);
+            lista.push(num2);
+            lista.push(num3);
+            lista.push(num4);
+            lista.push(num5);
+
+            var soma = 0;
+
+            for(var i = 0; i < lista.length; i++) {
+                soma = soma + parseInt(lista[i]);
+            }
+
+            document.write(soma)
+        }
+
+        function numero() {
+            num1 = prompt("Diga o 1° numero")
+            num2 = prompt("Diga o 2° numero")
+            num3 = prompt("Diga o 3° numero")
+            num4 = prompt("Diga o 4° numero")
+            num5 = prompt("Diga o 5° numero")
+            lista = []
+
+            lista.push(num1);
+            lista.push(num2);
+            lista.push(num3);
+            lista.push(num4);
+            lista.push(num5);
+
+            sPar = []
+            sImpar = []
+
+            for(var i = 0; i = lista.length; i++) {
+                if(lista[i] % 2 == 0) {
+                    sPar.push(lista[i]);
+                }else {
+                    sImpar.push(lista[i]);
+                }
+            }
+
+            document.write(nPar + "<br>")
+            document.write(nImpar)
+
+        }
+
+        function
     </script>
 
 </head>
 <body>
-    <input type="button" value="Enviar" onclick="media()">
+    <input type="button" value="Enviar" onclick="numero()">
 </body>
 </html>
