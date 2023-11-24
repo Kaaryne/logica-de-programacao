@@ -223,11 +223,16 @@
             sPar = []
             sImpar = []
 
+            nPar = 0
+            nImpar
+
             for(var i = 0; i = lista.length; i++) {
                 if(lista[i] % 2 == 0) {
                     sPar.push(lista[i]);
+                    nPar = nPar + 1
                 }else {
                     sImpar.push(lista[i]);
+                    nPar = nPar + 1
                 }
             }
 
@@ -241,6 +246,6 @@
 
 </head>
 <body>
-    <input type="button" value="Enviar" onclick="abc()">
+    <input type="button" onclick="abc()" value="Enviar" >
 </body>
 </html>
